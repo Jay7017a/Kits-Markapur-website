@@ -52,11 +52,11 @@
 
         }
         .Symbols{
-            padding-left:50px;
+            padding-left:30px;
         }
         .autonomous{
             background-color:black;
-            padding-left: 200px;
+            padding-left: 130px;
             padding-right:200px;
             
         }
@@ -64,12 +64,12 @@
            
             color:black;
             background-color:#738B91;
-            font-size:35px;
-            height:60px;
-            padding-left:300px;
-            padding-top:20px;
-            padding-bottom:50px;
-            border-radius:30px;
+            font-size:60px;
+            height:10px;
+            padding-left:200px;
+            padding-top:10px;
+            padding-bottom:70px;
+            border-radius:20px;
         }
         .lists{
             background-color:#0AF512;
@@ -93,7 +93,9 @@
              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
              margin-bottom: 5px;
             font-size:15px;
-             color: White;
+             color:black;
+             position:sticky;
+            top:0px;
         }
         .options{
            
@@ -114,6 +116,7 @@
             background-position: center;
             background-size: cover;
             position:relative;
+            margin-bottom: 10px;
         }
         .fixingauditorium{
             position: absolute;
@@ -159,10 +162,13 @@
             background-image: linear-gradient(rgba(122,234,233,0.4),rgba(211,221,222.0.5));
             border-bottom: 10px solid blue;
             position:relative;
+           
         
         }
         .ramimage{
             border-left:20px solid blue;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
             position:absolute;
             top:100px;
             left:80px;
@@ -183,6 +189,159 @@
        .paragraph{
         color:#6F6F70;
         font-size: larger;
+       }
+       .viewallcourses{
+        padding:10px;
+        border-radius: 12px;
+        color:white;
+        background-image:linear-gradient(rgba(6, 14, 128,0.9));
+        width:200px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .chaithanya{
+        position:relative;
+
+       }
+       .trusted{
+        position:absolute;
+        right:0px;
+        bottom:10px;
+        padding:10px;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height:30px;
+       }
+       .outerexam{
+        display:flex;
+        justify-content: center;
+        height:300px;
+        
+       }
+       .dept{
+        display:flex;
+        justify-content: center;
+        background-color: #132FE8;
+        height:500px;
+        
+       }
+       .sh{
+        margin-right: 20px;
+        margin-top:100px;
+        height:300px;
+        width:300px;
+        background-color: #0AF512;
+        margin-bottom: 100px;
+       }
+       .exam{
+        padding:10px;
+        display: flex;
+        flex-direction:column;
+         background-image:linear-gradient(rgba(148, 235, 242,0.8),rgba(204, 237, 240,0.5));
+        margin-left:20px;
+        height:200px;
+        width:400px;
+        margin-top:20px;
+        
+        box-shadow:solid  #6F6F70;
+        border-radius: 10px;
+       }
+       .exam1{
+        padding:10px;
+        border-left:5px solid #22F707;
+        
+        height:60px;
+        width:200px;
+        margin-left:30px;
+        box-shadow:solid  #6F6F70;
+       }
+       .exam2{
+        background-color: aliceblue;
+        border-radius: 5px;
+        height:150px;
+        width:230px;
+        margin-left:30px;
+        margin-top:20px;
+        margin-bottom: 10px;
+       }
+       .examh{
+        color: #1351A1;
+        font-size: large;
+       }
+    
+       a{
+        color: #132FE8;
+        text-decoration: none;
+        font-size: 15px;
+       }
+       .shpara{
+        font-size: 30px;
+       }
+       .shp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       .outerstudents{
+        display:flex;
+        justify-content: center;
+      position: relative;
+        height:500px;
+        
+       }
+       .students{
+        margin-right: 20px;
+        margin-top:200px;
+        height:200px;
+        width:200px;
+        border:1px solid black;
+        margin-bottom: 80px;
+        border-radius: 10px;
+       text-align: center;
+       }
+       .achievements{
+        font-size: 60px;
+        margin-top: 100px;
+        position: absolute;
+        left:30%;
+        color: #0554E8;
+       }
+       .icon{
+        margin-top: 50px;
+        height: 70px;
+        width: 70px;
+       }
+        .icon:hover{
+            color:#0554E8;
+        margin-top: 50px;
+        height: 70px;
+        width: 70px;
+       }
+       .stud{
+        color: #0554E8;
+        font-size: 30px;
+       }
+       .st{
+        color:#7D7E82;
+       }
+        .publications{
+        display:flex;
+        justify-content: center;
+      position: relative;
+        height:500px;
+        border-top:1px solid black;
+       }
+       .pubimg{
+        margin-right: 20px;
+        margin-top:100px;
+        height:200px;
+        width:300px;
+        border:1px solid black;
+        
+        border-radius: 10px;
+       text-align: center;
        }
     </style>
 </head>
@@ -205,7 +364,7 @@
    
      <div class="autonomous">
         <span><div class="announcements">
-           <img src="./announcement.png" height="60px;">  KITS IS NOW AUTONOMOUS..!
+           <img src="./announcement.png" height="65px;">  KITS IS NOW AUTONOMOUS..!
         </div>
         </span>
     </div>
@@ -324,13 +483,97 @@
     <div class="outerrambabupic">
         <div class="ramimage">
             <img src="./rambabu.jpg" width="300px;" height="300px;">
-            <img src="./krishna chaothanya.jpg" width="250px;" height="300px;">
+            <img src="./krishna chaothanya.jpg" width="250px;" height="300px;" class="chaithanya">
+            <h5 class="trusted">Trusted by 5000 <br>Students</h5>
         </div>
         <div class="ram">
             <p class="aboutkits">About Krishna Chaithanya Institute of Technology and Sciences</p>
             <h1>Welcome To The Best Learning Center</h1>
             <p class="paragraph">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
+       <input type="button" name="button" id="button"value="View all courses" class="viewallcourses"> 
         </div>
+    </div>
+    <div class="outerexam">
+        <div class="exam">
+            <div class="exam1">
+                <span class="examh"><b>Examinations Board</b></span><br>
+                                <span class="examp">Get All the latest updates on Exams here</span>
+            </div>
+            <div class="exam2"></div>
+        </div>
+        <div class="exam">
+            <div class="exam1">
+                <span class="examh"><b>Notifications Board</b></span><br>
+                                <span class="examp">Get All the latest updates Notifications here</span>
+            </div>
+
+            <div class="exam2"></div>
+        </div>
+    </div>
+    <div class="dept">
+        <div class="sh">
+            <img src="./sh.png" width="100%;" height="200px;">
+            <div class="shp"><span class="shpara"><b>S&H</b></span><br>
+            <span><a href="#">Read More -></a></span></div>
+        </div>
+        <div class="sh">
+             <img src="./cse.jpg" width="100%;" height="200px;">
+             <div class="shp"><span class="shpara"><b>CSE</b></span><br>
+            <span><a href="#">Read More -></a></span></div>
+        </div>
+        <div class="sh">
+             <img src="./ece.jpg" width="100%;" height="200px;">
+             <div class="shp"><span class="shpara"><b>ECE</b></span><br>
+            <span><a href="#">Read More -></a></span></div>
+        </div>
+    </div>
+    <div class="outerstudents">
+        <h3 class="achievements">Our Achievements</h3>
+        <div class="students">
+            <svg  class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg><br>
+            <span class="stud">5,000</span><br>
+            <span class="st">STUDENTS</span>
+        </div>
+        <div class="students">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+</svg><br>
+<span class="stud">2,620</span><br>
+            <span class="st">GRADUATED</span>
+        </div>
+        <div class="students">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+</svg><br>
+<span class="stud">160</span><br>
+            <span class="st">AWARD WINNERS</span>
+        </div>
+        <div class="students">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+</svg><br>
+<span class="stud">155</span><br>
+            <span class="st">FACULTIES</span>
+        </div>
+    </div>
+    <div class="publications">
+        <div class="pubimg">
+            <img src="./nss.jpeg" width="100%;" height="100%;">
+        </div>
+         <div class="pubimg">
+            <img src="./tap.jpeg" width="100%;" height="100%;">
+         </div>
+          <div class="pubimg">
+            <img src="./vscode.jpeg" width="100%;" height="100%;">
+          </div>
+           <div class="pubimg">
+            <img src="./campus.jpeg" width="100%;" height="100%;">
+           </div>
+        
     </div>
 </body>
 </html>
