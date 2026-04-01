@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Navbar{
+            background-color: #132FE8;
+            display:flex;
+            justify-items: center;
+        }
+        .Navbarelements{
+            color:white;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right:10px;
+            padding:10px;
+        }
+         .Collegeinfo{
+            background-color: #30A8C7;
+            margin-top: 8px;
+            height:25px;
+            border-radius: 20px;
+            padding:5px;
+        }
+        .outerimages{
+            display: flex;
+            justify-content: center;
+        }
+        .images1{
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .images{
+             
+             width:80px;
+             height:80px;
+            
+             
+        }
+        .imageskakinada{
+            
+            width:80px;
+            height:80px;
+           
+        }
+        .autonomous{
+            background-color:black;
+            padding-left: 130px;
+            padding-right:200px;
+            
+        }
+        .announcements{
+           
+            color:black;
+            background-color:#738B91;
+            font-size:60px;
+            height:10px;
+            padding-left:200px;
+            padding-top:10px;
+            padding-bottom:70px;
+            border-radius:20px;
+        }
+         .lists{
+            background-color:#0AF512;
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            position:sticky;
+            top:0;
+        }
+        .innerlists{
+            padding:10px;
+            margin-right: 10px;
+            color:black;
+            
+
+        }
+        .select{
+            border:none;
+            outline: none;
+             background-color: #0AF512;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             margin-bottom: 5px;
+            font-size:15px;
+             color:black;
+             position:sticky;
+            top:0px;
+        }
+        .options{
+           
+             background-color:white;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding:30px;
+             margin-top:30px;
+             color:#7A7978;
+        }
+        .options:hover{
+            color: #132FE8;
+        }
+       
+        .auditorium{
+           
+            opacity: 0.9;
+            height:400px;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .outerdiv{
+            
+            display:flex;
+            justify-content: center;
+            border-bottom: 10px solid #1E18ED;
+            
+        }
+        .Greencampus{
+            background-color: #BEC4BE;
+          
+           margin-right:20px; position:relative;
+           border-radius: 15px;
+           display:flex;
+           justify-content: center;
+           flex-wrap:wrap ;
+           margin-bottom: 10px;
+        }
+        .greencampusposition{
+           padding:10px;
+           margin-right: 3px;
+           width:50px;
+           height:50px;
+        }
+        .greentext{
+            padding:10px;
+        }
+        .Greencampus2{
+            background-color: #BEC4BE;
+          
+           margin-right:20px; position:relative;
+           border-radius: 15px;
+           display:flex;
+           justify-content: center;
+           flex-wrap:wrap ;
+           margin-bottom: 10px;
+        }
+        .greencampusposition2{
+           padding:10px;
+           margin-right: 3px;
+           width:50px;
+           height:50px;
+           
+        }
+        .greentext2{
+            padding:10px;
+        }
+          .Greencampus2:hover{
+           padding:10px;
+         border-bottom:12px solid #132FE8;
+          border-top:2px solid #132FE8;
+           border-right:2px solid #132FE8;
+            border-left:2px solid #132FE8;
+            border-radius:0%;
+        }
+        .Greencampus:hover{
+           padding:10px;
+         border-bottom:12px solid #132FE8;
+          border-top:2px solid #132FE8;
+           border-right:2px solid #132FE8;
+            border-left:2px solid #132FE8;
+            border-radius:0%;
+        }
+        .outerrambabupic{
+            display: flex;
+            justify-content: center;
+        }
+        .ramimage{
+           
+           margin-right: 20px;
+           max-width: 400px;
+           height:400px;
+           border: #132FE8;
+        }
+        .ram{
+            padding:10px;
+           
+            border: #0AF512;
+            background-color: #1E18ED;
+        }
+        
+         @media screen and (max-width:640px) {
+            
+          .Greencampus{
+            display: none;
+          }
+          .greencampusposition{
+            display: none;
+          }
+          .greentext{
+            display: none;
+          }
+         
+        }
+        @media screen and (max-width:1200px) {
+            .Navbar{
+                display:none;
+            }
+           
+            .images1 .images{
+                display:none ;
+            }
+            .lists{
+                display: none;
+            }
+          .innerlists{
+            display:none;
+          }
+          .announcements{
+            display: none;
+          }
+          
+           
+          .imageskakinada{
+                width:50px;
+                height:50px;
+                
+                position: absolute;
+                left:5px;
+            }  
+            
+            .auditorium{
+                    margin-top: 60px;
+                    max-width:100%;
+                    height:200px;
+            }
+
+           
+        }
+       
+    </style>
+</head>
+<body>
+     <div class="Navbar">
+        <div class="Navbarelements">Home</div>
+        <div class="Navbarelements">Alumni</div>
+        <div class="Navbarelements">Contact</div>
+        <div class="Navbarelements">KRISHNA CHAITHANYA INSTITUTE OF TECHNOLOGY AND SCIENCES</div>
+        <div class="Navbarelements">Gallery</div>
+        <div ><input type="button" name= "button" id="button" class="Collegeinfo" value="College Info"></div>
+    </div>
+     <div class="outerimages">
+        <div class="images1"><img src="./aicte.jpeg" class="images"></div>
+         <div class="images1"><img src="./jntu.png"  class="imageskakinada"></div>
+           <div class="images1"><img src="./naac.png" class="images"></div>
+            <div class="images1"><img src="./naacb++.jpeg" class="images"></div>
+             <div class="images1"><img src="./ugc.png" class="images"></div>
+    </div>
+     <div class="autonomous">
+        <span><div class="announcements">
+           <img src="./announcement.png" height="65px;">  KITS IS NOW AUTONOMOUS..!
+        </div>
+        </span>
+    </div>
+    <div class="lists">
+        <div class="innerlists">
+            <select class="select">
+                <option class="options" value="About Kits">ABOUT KITS</option>
+                 <option class="options" value="VISIOV & MISSION">Vision & Mission</option>
+                  <option  class="options" value="Organisation chart">Organization Chart</option>
+                   <option class="options" value="Institutional development plan">Institutional Development plan</option>
+                    <option class="options" value="Hr policy">HR policy</option>
+                     <option  class="options" value="Annual celebrations">Annual celebrations</option>
+                      <option class="options" value="College Location">College location</option>
+            </select>
+        </div>
+         <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="Administration">ADMINISTRATION</option>
+                <option class="options"  value="chairman">Chairman</option>
+                 <option class="options"  value="Secretary & correspondent">Secretary & correspondent</option>
+                  <option class="options"  value="Principle">Principle</option>
+                   <option class="options"  value="Governing Body">Governing Body</option>
+                    <option class="options"  value="Exam cell details">Exam cell details</option>
+                     <option class="options"  value="Faculty Details">faculty Details</option>
+                      <option class="options"  value="College Location">College location</option>
+            </select>
+        </div>
+         
+         <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="Academis">ACADEMICS</option>
+                <option class="options"  value="Academic Syllabus">Academic syllabus</option>
+                 <option class="options"  value="Academic calenders">Academic calenders</option>
+                  <option class="options"  value="Syllabus & regulations">Syllabus & Regulations</option>
+                   <option class="options"  value="Academic Rules">Academic rules</option>
+                    <option class="options"  value="Academic Programs">Academic Programs</option>
+                     
+            </select>
+        </div>
+        <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="Department">DEPARTYMENT</option>
+                <option class="options"  value="B.tech">B.Tech</option>
+                 <option class="options"  value="M.Tech">M.Tech</option>
+                 </select>
+                 </div>
+          <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="Examinations">EXAM CELL</option>
+                <option class="options"  value="External time tables">External time tables</option>
+                 <option class="options"  value="Internal Time tables">Internal time tables</option>
+                  <option class="options"  value="Academic Calenders">Academic Calenders</option>
+                   <option class="options"  value="Academic Toppers">Academic toppers</option>
+                    <option class="options"  value="Previous year Question Papers">Previous Year Question papers</option>
+                     
+            </select>
+            </div>
+             <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="training & placement cell">TRAINING & PLACEMENTS CELL</option>
+                <option class="options"  value="Carrer guidance">Carrer Guidance</option>
+                 <option class="options"  value="Intership Offers">Intership Offers</option>
+                  <option class="options"  value="Project Guidance">Project Guidance</option>
+                   <option class="options"  value="Previous Year placements">Previous year placements</option>
+                     
+            </select>
+            </div>
+            <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="LIBRARY">LIBRARY</option>
+                <option class="options"  value="Managdrial disclosure">Managerial Disclosure</option>
+                 <option class="options"  value="disciplane">Disciplane</option>
+                 </select>
+                 </div>
+            <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="Student life">STUDENT LIFE</option>
+                <option class="options"  value="NSS">NSS</option>
+                 <option class="options"  value="Hosetl">Hostel</option>
+                  <option class="options"  value="AntiRagging">Anti Rggaing</option>
+                   <option class="options"  value="Canteen">Canteen</option>
+                    <option class="options"  value="Exam cell details">Exam cell details</option>
+                     <option class="options"  value="Faculty Details">faculty Details</option>
+                      <option class="options"  value="College Location">College location</option>
+            </select>
+            </div>
+             <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="INFORMATION CORNER">INFORMATION CORNER</option>
+                <option class="options"  value="Job Openings">Job openings</option>
+                 <option class="options"  value="rti">RTI</option>
+                  <option class="options"  value="Telephone Directory">Telephone Directory</option>
+            </select>
+            </div>
+    </div>
+    <div class="audi">
+        <img src="./kitsimage.jpeg"  class="auditorium imgg">
+       
+    </div>
+     <div class="outerdiv">
+         <div class="Greencampus2 g1">
+            <img src="./worldclassimage.jpg" width="50%;" height="30%"  class="greencampusposition2 g1"><p class="greentext2">
+            <h2>Worls Class Education</h2><br>
+            <p>Help Us to develop Skills</p></p>
+         </div>
+         <div class="Greencampus">
+            <img src="./expertteachers.jpg"  class="greencampusposition">
+            <p class="greentext">
+            <h2>Expert teachers</h2><p>Best And Highly Qualified</p></p>
+         </div>
+        <div class="Greencampus">
+            <img src="./greeencampus4.jpg"  class="greencampusposition">
+            <p class="greentext">
+            <h2>Green Campus</h2><p>Healthy Environment</p></p>
+        </div>
+    </div>
+   <div class="outerrambabupic">
+        <div class="ramimage">
+            <img src="./rambabu.jpg"  width="100%;" height="50%;" class="chaithanya">
+            <img src="./krishna chaothanya.jpg"   width="100%;" height="50%;" class="chaithanya">
+            <h5 class="trusted">Trusted by 5000 <br>Students</h5>
+        </div>
+        <div class="ram">
+            <p class="aboutkits">About Krishna Chaithanya Institute of Technology and Sciences</p>
+            <h1>Welcome To The Best Learning Center</h1>
+            <p class="paragraph">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
+       <input type="button" name="button" id="button"value="View all courses" class="viewallcourses"> 
+        </div>
+    </div>
+</body>
+</html>
