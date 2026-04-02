@@ -228,16 +228,22 @@
         border-bottom-left-radius: 10px;
         height:30px;
        }
-       .outrtcard{
+       .outetcard{
         display: flex;
         justify-content: center;
        }
        .crcolor{
         color: #132FE8;
+        background-color: #96E5F2;
+       }
+       .h3{
+        border-left:4px solid #0AF512;
        }
        .incard{
         margin-right: 10%;
        }
+       
+      
          @media screen and (max-width:640px) {
             
           .Greencampus{
@@ -278,7 +284,10 @@
                 position: absolute;
                 left:5px;
             }  
-            
+            .card1{
+            max-width: 100%;
+            margin-right: 0%;
+        }
             .auditorium{
                     margin-top: 60px;
                     width:100%;
@@ -289,21 +298,15 @@
             display: none;
           }
           .outerrambabupic{
-            flex-direction: column;
-            height: 100%;
+           display:none;
           }
            .ram{
-            position:absolute;
-            left:5%;
-            top:100%;
-           
-            height:60%;
-            width:90%;
-            font-family:cursive;
+            display:none;
         }
         .ramimage{
-            margin-left: 0%;
+           display:none;
         }
+        
   
         }
        
@@ -461,7 +464,7 @@
     <div class="incard">
     <div class="card">
         <div class="card-header crcolor">
-            <h3>Examination Board</h3>
+            <h3 class="h3">Examination Board</h3>
             <span>Get all the latest upadates here</span>
         </div>
         <div class="card-body">
@@ -480,6 +483,40 @@
         </div>
 
     </div>
+    </div>
+    </div>
+    <div class="outerdept">
+        <div class="card1">
+      
+
+    <div class="card">
+       
+        <div class="card-body">
+           
+            <img src="./sh.png" >
+            <p><b>S&H</b></p>
+                </div>
+            <div class="card-footer"><a href="#" >Read More -></a></div>
+        </div>
+        </div>
+        <div class="card1">
+        <div class="card">
+        <div class="card-body">
+             <img src="./cse.jpg" >
+             <p><b>CSE</b></p>
+            </div>
+            <div class="card-footer"><a href="#" >Read More -></a></div>
+            </div>
+            </div>
+            <div class="card1">
+            <div class="card">
+        <div class="card-body">
+             <img src="./ece.jpg">
+             <p><b>ECE</b></p>
+            </div>
+            <div class="card-body"><a href="#">Read More -></a>
+            </div>
+        </div>
     </div>
     </div>
 </body>
