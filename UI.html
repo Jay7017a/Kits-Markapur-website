@@ -101,12 +101,8 @@
             color: #132FE8;
         }
        
-        .auditorium{
-           
-            opacity: 0.9;
-            height:400px;
-            width:1000px;
-            margin-bottom: 10px;
+        .audiimage{
+            margin-top:0%;
         }
         .outerdiv{
             
@@ -228,9 +224,10 @@
         border-bottom-left-radius: 10px;
         height:30px;
        }
-       .outetcard{
+       .outercard{
         display: flex;
         justify-content: center;
+        flex-direction: column-reverse;
        }
        .crcolor{
         color: #132FE8;
@@ -239,10 +236,10 @@
        .h3{
         border-left:4px solid #0AF512;
        }
-       .incard{
-        margin-right: 10%;
-       }
-       
+      .ramborder{
+        border-bottom: 10px solid blue;
+        margin-bottom: 5%;
+      }
       
          @media screen and (max-width:640px) {
             
@@ -259,6 +256,9 @@
   
         }
         @media screen and (max-width:1200px) {
+            .audiimage{
+                margin-top: 15%;
+            }
             .Navbar{
                 display:none;
             }
@@ -426,13 +426,19 @@
             </select>
             </div>
     </div>
-    <div class="audi">
-        <img src="./kitsimage.jpeg"  class="auditorium imgg">
-       
+    <div class="container-fluid">
+        
+            <div class="row">
+               
+                      <img src="./kitsimage.jpeg" class="audiimage" >
+                </div>
+                </div>
+        </div>
+        
     </div>
      <div class="outerdiv">
          <div class="Greencampus2 g1">
-            <img src="./worldclassimage.jpg" width="50%;" height="30%"  class="greencampusposition2 g1"><p class="greentext2">
+            <img src="./worldclassimage.jpg" width="50%;" height="30%;"  class="greencampusposition2 g1"><p class="greentext2">
             <h2>Worls Class Education</h2><br>
             <p>Help Us to develop Skills</p></p>
          </div>
@@ -447,21 +453,27 @@
             <h2>Green Campus</h2><p>Healthy Environment</p></p>
         </div>
     </div>
-   <div class="kc outerrambabupic">
-        <div class="k ramimage">
-           <span> <img src="./rambabu.jpg " class="chaithanya2 chaithanya"></span>
-            <img src="./krishna chaothanya.jpg" class="chaithanya2 chaithanya">
-            <h5 class="trusted">Trusted by 5000 <br>Students</h5>
+   <div class="container-fluid ramborder">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+           <span> <img src="./rambabu.jpg " height="50%;" width="40%;"></span>
+            <img src="./krishna chaothanya.jpg">
+            <h5 >Trusted by 5000 <br>Students</h5>
         </div>
-        <div class="k2 ram">
+        <div class="col-md-6">
             <p class="a aboutkits">About Krishna Chaithanya Institute of Technology and Sciences</p>
             <h1>Welcome To The Best Learning Center</h1>
             <p class="pr paragraph">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
        <input type="button" name="button" id="button"value="View all courses" class="viewallcourses"> 
         </div>
     </div>
-    <div class="outercard">
-    <div class="incard">
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
     <div class="card">
         <div class="card-header crcolor">
             <h3 class="h3">Examination Board</h3>
@@ -472,7 +484,9 @@
         </div>
 </div>
     </div>
-    <div class="incard">
+    
+
+    <div class="col-md-6">
      <div class="card">
         <div class="card-header crcolor">
             <h3>Examination Board</h3>
@@ -485,9 +499,11 @@
     </div>
     </div>
     </div>
-    <div class="outerdept">
-        <div class="card1">
-      
+    </div>
+    <div class="container-fluid">
+        <div classs="container">
+        <div class="row">
+      <div class="col-md-4">
 
     <div class="card">
        
@@ -499,7 +515,7 @@
             <div class="card-footer"><a href="#" >Read More -></a></div>
         </div>
         </div>
-        <div class="card1">
+        <div class="col-md-4">
         <div class="card">
         <div class="card-body">
              <img src="./cse.jpg" >
@@ -508,15 +524,16 @@
             <div class="card-footer"><a href="#" >Read More -></a></div>
             </div>
             </div>
-            <div class="card1">
+            <div class="col-md-4">
             <div class="card">
         <div class="card-body">
-             <img src="./ece.jpg">
+             <img src="./ece.jpg"  width="80%;">
              <p><b>ECE</b></p>
             </div>
             <div class="card-body"><a href="#">Read More -></a>
             </div>
         </div>
+    </div>
     </div>
     </div>
 </body>
