@@ -328,9 +328,46 @@
      .phone{
         display:flex;
      }
+     html{
+        margin:0;
+        padding:0;
+     }
+     body{
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+     }
+     ::placeholder{
+        color:aliceblue;
+    opacity:1
+    }
+    .bi-send{
+        display: block;
+        transition:0.4s;
+    }
+    .bi-send:hover{
+        color:rgb(236, 236, 17);
+        font-size:50px;
+        transform:scale(1.4);
+    }
+    #email{
+
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+    .placements{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .placementit{
+        border:1px #6F6F70;
+        margin-left: 10;
+    }
     </style>
 </head>
-<body>
+<body >
      <div class="Navbar">
         <div class="Navbarelements">Home</div>
         <div class="Navbarelements">Alumni</div>
@@ -518,6 +555,7 @@
     </div>
     </div>
     </div>
+    </div>
     <div class="container-fluid">
         <div classs="container">
         <div class="row">
@@ -553,6 +591,57 @@
         </div>
     </div>
     </div>
+    </div>
+    </div>
+    <div class="container-fluid bg-primary p-5">
+        <div class="container bg-primary">
+            <div class="row">
+                <div class="col-md-5 mr-5">
+                    <div class="card border-0 mr-3">
+                        <div class="card-header text-light fs-3 bg-primary border-bottom-0">
+                           <h1><b>Subscribe to Our NewsLetter</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card border-0">
+                    <div class="card-body bg-primary border-bottom border-2 border-light text-light">
+                        <input type="email"  id="email" placeholder="Enter Your E-mail" class=" bg-primary border-0 text-light fs-5">
+                    </div>
+                    <div class="card-footer text-light bg-primary">
+                        Kindly Sign Up for Weekly News and Updates
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-1 ml-0">
+                    <div class="card border-0 ml-0">
+                        <div class="card-body bg-primary border-0 ml-0">
+                            <i class="bi bi-send fs-1 ml-0 text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Our Placement Partners</h1>
+                </div>
+            </div>
+                
+                <div class="row p-3">
+                <div class="col-md-12 mr-2">
+                    <div class="placement">
+                        <img src="./deloite.jpg" class="mr-3 border-1 border-secondary placementit">
+                        <img src="./infosys.png" class="mr-3 border-1 border-secondary placementit">
+                        <img src="./qualcom.png" class="mr-3 border-1 border-secondary placementit">
+                        <img src="./peopletech.jpg" class="mr-3 border-1 border-secondary placementit">
+                    </div>
+                </div>
+        </div>
     </div>
     
     <footer>
