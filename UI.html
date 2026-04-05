@@ -200,6 +200,11 @@
         color:#6F6F70;
         font-size: larger;
        }
+       .carousel-item .img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+       }
        .viewallcourses{
         padding:10px;
         border-radius: 12px;
@@ -378,6 +383,11 @@
         object-fit:cover;
         padding:0;
     }
+    .copyright{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+    }
     </style>
 </head>
 <body >
@@ -498,8 +508,33 @@
         
             <div class="row">
                
-                      <img src="./kitsimage.jpeg" class="audiimage" >
-                </div>
+                    <div class="carousel slide" id="carouselex2" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item h-50 w-100 active">
+                                <img src="./annaul.jpg" class="d-block w-100 img">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img1.jpg" class="d-block w-100 img">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./annaul.jpg" class="d-block w-100 img">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./kitsannachaithanya.jpg" class="d-block w-100 img">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./library.jpg" class="d-block w-100 img">
+                            </div>
+                        </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselex2" data-bs-slide="prev">
+<span class="carousel-control-prev-icon text-dark p-0"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselex2" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+                    </div>
+                
                 </div>
         </div>
         
@@ -538,76 +573,56 @@
     </div>
     </div>
     </div>
-    <div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-    <div class="card">
-        <div class="card-header crcolor">
-            <h3 class="h3">Examination Board</h3>
-            <span>Get all the latest upadates here</span>
-        </div>
-        <div class="card-body">
-        <p>A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
-        </div>
-</div>
-    </div>
-    
+    <div class="container-fluid p-3 m-0">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center text-primary fs-1 p-3">Our Achievements</h1>
+                <div class="col-md-3">
+                    <div class="card border-radius-3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">5,000</h1>
+                            <p class="text-secondary fs-3">STUDENTS</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-md-3">
 
-    <div class="col-md-6">
-     <div class="card">
-        <div class="card-header crcolor">
-            <h3>Examination Board</h3>
-            <span>Get all the latest upadates here</span>
-        </div>
-        <div class="card-body">
-        <p>A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
-        </div>
+                    <div class="card text-center  border-radius-3">
+                        <div class="card-body">
+                            <i class="bi bi-mortarboard-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">2,640</h1>
+                            <p class="text-secondary fs-3">GRADUATED</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                    <div class="card text-center border-radius-3">
 
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid">
-        <div classs="container">
-        <div class="row">
-      <div class="col-md-4">
+                        <div class="card-body">
+                            <i class="bi bi-trophy-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">600</h1>
+                            <p class="text-secondary fs-3">AWARD WINNERS</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
 
-    <div class="card">
-       
-        <div class="card-body">
-           
-            <img src="./sh.png" >
-            <p><b>S&H</b></p>
+                    <div class="card text-center border-radius-3">
+
+                        <div class="card-body">
+                            <i class="bi bi-person-badge-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">150</h1>
+                            <p class="text-secondary fs-3">FACULTIES</p>
+                        </div>
+                    
+                    </div>
                 </div>
-            <div class="card-footer"><a href="#" >Read More -></a></div>
-        </div>
-        </div>
-        <div class="col-md-4">
-        <div class="card">
-        <div class="card-body">
-             <img src="./cse.jpg" >
-             <p><b>CSE</b></p>
-            </div>
-            <div class="card-footer"><a href="#" >Read More -></a></div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card">
-        <div class="card-body">
-             <img src="./ece.jpg"  width="80%;">
-             <p><b>ECE</b></p>
-            </div>
-            <div class="card-body"><a href="#">Read More -></a>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
     
-    <div class="container-fluid bg-primary p-5">
+    <div class="container-fluid bg-primary p-5 m-0">
         <div class="container bg-primary">
             <div class="row">
                 <div class="col-md-5 mr-5">
@@ -690,7 +705,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="card h-100 w-100">
                         <div class="card-header">
                             <img src="./vscode.jpeg" class="img-fluid w-100 h-100">
@@ -702,7 +717,7 @@
                         </div>
                         </div>
                         </div>
-                        <div class="col-lg-4 col-12 col-md-6 d-lg-block d-sm-none d-md-block d-lg-block">
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-block d-lg-block">
                             <div class="card h-100 w-1000">
                          <div class="card-header">
                             <img src="./tap.jpeg" class="img-fluid w-100 h-100">
@@ -714,7 +729,7 @@
                         </div>
                         </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-12 d-sm-none d-md-none d-lg-block">
+                        <div class="col-md-6 col-lg-4 col-sm-12 d-sm-none d-md-none d-lg-block">
                             <div class="card border-radius-3 h-100 w-100">
                          <div class="card-header">
                             <img src="./nss.jpeg" class="img-fluid w-100 h-110">
@@ -741,7 +756,7 @@
                         </div>
                         </div>
                         </div>
-                        <div class="col-lg-4 col-12 col-md-6 d-sm-none d-lg-block d-md-block">
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-lg-block d-md-block">
                             <div class="card h-100 w-70">
                          <div class="card-header">
                             <img src="./tap.jpeg" class="img-fluid w-100 h-100">
@@ -753,7 +768,7 @@
                         </div>
                         </div>
                         </div>
-                        <div class="col-lg-4 col-12 col-md-6 d-sm-none d-md-none d-lg-block">
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-none d-lg-block">
                             <div class="card border-radius-3 h-100 w-100">
                          <div class="card-header">
                             <img src="./nss.jpeg" class="img-fluid w-100">
@@ -775,6 +790,110 @@
 </button>
             </div>
             </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary p-5 pt">
+    
+            <div class="row">
+                <h1 class="text-light p-2 fs-1">Our Departments</h1>
+            <div class="col-md-12">
+            <div class="carousel slide" id="carouselep2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card h-100 w-100">
+                        <div class="card-header">
+                            <img src="./sh.png" class="img-fluid w-100 h-100">
+                        </div>
+                
+                        <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">S&H</h1>
+                            <a href="#" class="text-danger text-decoration-none text-center fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-block d-lg-block">
+                            <div class="card h-100 w-100">
+                         <div class="card-header">
+                            <img src="./ece.jpg" class="img-fluid w-100 h-100">
+                        </div>
+                    
+                        <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">ECE</h1>
+                            <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 col-sm-12 d-sm-none d-md-none d-lg-block">
+                            <div class="card border-radius-3 h-100 w-100">
+                         <div class="card-header">
+                            <img src="./cse.jpg" class="img-fluid w-100 h-110">
+                        </div>
+                       <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">CSE</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 col-md-6">
+                            <div class="card h-100 w-100">
+                        <div class="card-header">
+                            <img src="./mechanical.jpg" class="img-fluid w-100 h-110">
+                        </div>
+                
+                       <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">Mechanical</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                    
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-lg-block d-md-block">
+                            <div class="card h-50 w-70">
+                         <div class="card-header">
+                            <img src="./civil.jpg" class="img-fluid w-100 h-100">
+                        </div>
+                    
+                       <div class="card-body bg-primary text-cenetr">
+                            <h1 class="text-center">Civil</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-none d-lg-block">
+                            <div class="card border-radius-3 h-50 w-100">
+                         <div class="card-header">
+                            <img src="./aiml.jpg" class="img-fluid w-100">
+                        </div>
+                       <div class="card-body bg-primary text-cenetr">
+                            <h1 class="text-center">AI-ML</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselep2" data-bs-slide="prev">
+<span class="carousel-control-prev-icon text-dark p-0"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselep2" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+            </div>
+            
         </div>
         </div>
         </div>
@@ -921,6 +1040,22 @@
     </div>
     </div>
     
+    </footer>
+    <footer>
+        <div class="container-fluid p-3 bg-black">
+            <div class="row">
+                <div class="col-md-9">
+                <h6 class="text-secondary text-center">@CopyRight 2022 Krishna chaithanya Institute of Technologies and Scieneces.Designed by Jayasree-jr.software developer</h6>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-twitter text-light mr-3"></i>
+<i class="bi bi-facebook text-primary mr-3"></i>
+<i class="bi bi-linkedin text-primary mr-3"></i>
+<i class="bi bi-instagram text-danger mr-3"></i>
+<i class="bi bi-whatsapp text-success mr-3"></i>
+
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
