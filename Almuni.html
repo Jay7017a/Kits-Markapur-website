@@ -378,16 +378,17 @@
         filter:invert(100%);
     
     }
-    .card-header{
-        height:200px;
-        width:100%;
-        object-fit:cover;
-        padding:0;
-    }
+   
     .copyright{
         display:flex;
         justify-content: center;
         flex-direction: row;
+    }
+    .navabar-collapse{
+        transition:none !important;
+    }
+    .navbar-collapse{
+        transform:scale(0.7);
     }
     </style>
 </head>
@@ -407,7 +408,7 @@
     
     <div class="collapse navbar-collapse bg-primary" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-itemtext-light fs-3">
+        <li class="nav-item text-light fs-3">
           <a class="nav-link active text-light fs-4 ml-2" href="#">Home</a>
         </li>
         <li class="nav-item text-light fs-3">
@@ -562,8 +563,10 @@
                 </div>
         </div>
        
-                    
-                        <nav class="navbar navbar-light bg-light bg-primary">
+        <div class="container h-50 bg-light">
+            <div class="row">
+                <div class="col-md-3">  
+                        <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     
     
@@ -575,34 +578,35 @@
     </button>
 
     
-    <div class="collapse navbar-collapse bg-primary" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-itemtext-light fs-3">
-          <a class="nav-link active text-light fs-4 ml-2" href="#">Home</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-column  ms-auto">
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link active text-primary fs-4 ml-2" href="#">Home</a>
         </li>
         <li class="nav-item text-light fs-3">
-          <a class="nav-link text-light fs-4" href="./Almuni.html">Alumni</a>
+          <a class="nav-link text-primary fs-4 " href="./Almuni.html">Alumni</a>
         </li>
         <li class="nav-item text-light fs-3">
-          <a class="nav-link text-light fs-4" href="#">Contacts</a>
+          <a class="nav-link text-primary fs-4" href="#">Contacts</a>
         </li>
         <li class="nav-item text-light fs-4">
-          <a class="nav-link text-light fs-4" href="#">Courses</a>
+          <a class="nav-link text-primary fs-4" href="#">Courses</a>
         </li>
         <li class="nav-item text-light fs-3">
-          <a class="nav-link text-light fs-4" href="#">KRISHNA CHAITHANYA INSTITUTE OF TECHNOLOGY AND SCIENCES</a>
+          <a class="nav-link fs-4" href="#">KRISHNA CHAITHANYA INSTITUTE OF TECHNOLOGY AND SCIENCES</a>
         </li>
-        <li class="nav-item text-light fs-3">
-          <a class="nav-link text-light fs-4" href="#">Gallery</a>
+        <li class="nav-item text-light fs-3 transform-0">
+          <a class="nav-link text-primary transform-0 fs-4" href="#">Gallery</a>
         </li>
-        <li class="nav-item">
-          <button type="button" class="bg-primary text-light border-3 border-black mt-2" value="button">College view</button>
-        </li>
+       
       </ul>
     </div>
 
   </div>
 </nav>
+</div>
+</div>
+</div>
                     </div>
                 </div>
             </div>
@@ -622,7 +626,7 @@
             <div class="row pt-2 border-top border-1 border-secondary">
                 <div class="col-md-4">
                     <div class="card bg-black text-light">
-                        <div class="card-header">
+                        <div class="card-header mb-0">
                             Contact
                         </div>
                         <div class="card-body">
