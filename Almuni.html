@@ -978,6 +978,28 @@
   .flash-outerdiv{
     position: relative;
   }
+  .s-nav{
+    z-index:1000;
+}
+.welcome{
+    text-shadow: 1px 2px 5px rgb(109, 155, 225);
+}
+.images2{
+    position:relative;
+}
+@keyframes right-side {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.transition-p{
+    position:absolute;
+    bottom:10px;
+    animation:right-side linear infinite;
+}
     </style>
 </head>
 <body>
@@ -992,7 +1014,7 @@
                 
                 <div class="col-md-11 flash-msg">
                     <div class="row">
-                <h6 class="text-light p-1 flash-outerdiv">
+                <h6 class="text-light p-1 flash-outerdiv welcome">
                     The First Accredited Institution by NAAC,Western Prakasam,Ap
                 </h6>
                 </div>
@@ -1041,7 +1063,8 @@
   </div>
     </nav>
     <div class="outerimages">
-        <div class="images1 mr-3"><img src="./aicte.jpeg" class="images"></div>
+        <div class="images1 mr-3"><img src="./aicte.jpeg" class="images images2">
+        <p class="transition-p text-light fs-1">OPEN AUDITORIUM</p></div>
         <div class="images1 mr-3"><img src="./jntu.png"  class="imageskakinada"></div>
         <div class="images1"><img src="./naac.png" class="images"></div>
         <div class="images1"><img src="./naacb++.jpeg" class="images"></div>
@@ -1063,7 +1086,7 @@
         </div>
     </div>
 </div>
-    <div class="lists">
+    <div class="lists position-sticky top-0 s-nav">
         <div class="innerlists">
             <select class="select">
                 <option class="options" value="About Kits">ABOUT KITS</option>
@@ -1295,7 +1318,7 @@
                 </div>
                 </div>
             </div>
-        
+    </div>
             <div class="container-fluid">
                <div class="container">
                     <div class="row">

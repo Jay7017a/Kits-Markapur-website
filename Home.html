@@ -588,9 +588,69 @@
   .flash-outerdiv{
     position: relative;
   }
+  .carou img {
+  width: 100%;
+  height: 400px;      /* same height for all images */
+  object-fit: cover;  /* main fix */
+}
+.s-nav{
+    z-index:1000;
+}
+.welcome{
+    text-shadow: 1px 2px 5px yellow;
+}
+.images2{
+    position:relative;
+}
+@keyframes right-side {
+    0%{
+        left:0px;
+        opacity:0;
+        
+        display:none;
+    }
+      20%%{
+        left:30px;
+        opacity:0;
+        display:none;
+    }
+      40%%{
+        left:40px;
+        opacity:0;
+        display:none;
+    }
+      60%{
+        left:60px;
+        opacity:0.3;
+   
+    }
+      80%{
+        left:80px;
+        opacity:0.5;
+        transform:rotateX(100%);
+        
+    }
+
+    100%{
+        left:100px;
+        background-color:red;
+        color:black;
+        opacity:1;
+       
+    }
+}
+.transition-p{
+    position:absolute;
+    bottom:70px;
+    left:-320px;
+    opacity:0;
+    transform: translateY(-100%);
+    animation:right-side 3s linear infinite;
+}
     </style>
 </head>
 <body >
+    
     <div class="container-fluid bg-black up mb-0">
         <div class="container">
             <div class="row">
@@ -602,7 +662,7 @@
                 
                 <div class="col-md-11 flash-msg">
                     <div class="row">
-                <h6 class="text-light p-1 flash-outerdiv">
+                <h6 class="text-light p-1 flash-outerdiv welcome">
                     The First Accredited Institution by NAAC,Western Prakasam,Ap
                 </h6>
                 </div>
@@ -610,7 +670,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-primary p-0">
   <div class="container-fluid p-0 m-0">
     
     
@@ -643,20 +703,102 @@
           <a class="nav-link text-light fs-4" href="#">Gallery</a>
         </li>
         <li class="nav-item">
-          <button type="button" class="bg-primary text-light border-3 border-black mt-2" value="button">College view</button>
+          <button type="button" class="bg-primary text-light border-3 border-black m-2" value="button">College view</button>
         </li>
       </ul>
     </div>
 
   </div>
     </nav>
+    <div>
     <div class="outerimages">
-        <div class="images1 mr-3"><img src="./aicte.jpeg" class="images"></div>
-        <div class="images1 mr-3"><img src="./jntu.png"  class="imageskakinada"></div>
-        <div class="images1"><img src="./naac.png" class="images"></div>
-        <div class="images1"><img src="./naacb++.jpeg" class="images"></div>
-        <div class="images1"><img src="./ugc.png" class="images"></div>
+        <div class="images1 mr-3"><img src="./aicte.jpeg" class="images" data-bs-target="#aicte" data-bs-toggle="modal"></div>
+        <div class="images1 mr-3"><img src="./jntu.png"  class="imageskakinada" data-bs-target="#jntu" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./naac.png" class="images" data-bs-target="#naac" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./naacb++.jpeg" class="images" data-bs-target="#naacb++" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./ugc.png" class="images" data-bs-target="#ugc" data-bs-toggle="modal"></div>
+</div>
+<div class="modal fade text-center" id="aicte">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>AICTE Approves Institute</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./aicte.jpeg" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
     </div>
+</div>
+</div>
+<div class="modal fade text-center" id="jntu">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>Jawaharlalr Technological University ,Kakinada</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./jntu.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="naac">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>National Assesment and Accredition Council</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./naac.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="aicte">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>B++</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./naacb++.jpeg" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="ugc">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>Approved By UGC</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./ugc.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
     <div class="container-fluid bg-black">
     <div class="container kitsautonumus kitsclg">
         <div class="row">
@@ -673,7 +815,7 @@
         </div>
     </div>
 </div>
-    <div class="lists">
+    <div class="lists position-sticky top-0 s-nav">
         <div class="innerlists">
             <select class="select">
                 <option class="options" value="About Kits">ABOUT KITS</option>
@@ -767,14 +909,39 @@
 </div>
 <div class="container-fluid h-50">
     <div class="row">
-        <div class="carousel" id="auditorium">
+        <div class="carousel slide" id="auditorium">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./kitsimage.jpeg" class="w-100 img-fluid first-carousel-img">
+                <div class="carousel-item active carou">
+                    <img src="./kitsimage.jpeg" class="images2" ><p class="transition-p text-light fs-3">OPEN AUDITORIUM</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./A-block.jpg" class="images2"><p class="transition-p text-light fs-3">A-Block</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./library-students.jpg" class="images2"><p class="transition-p text-light fs-3">Library-Infrastructure</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./annual-students-dance.jpg" class="images2"><p class="transition-p text-light fs-3">Annual-Day-Celebrations</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./campus.jpeg" class="images2"><p class="transition-p text-light fs-3">Campus</p>
                 </div>
             </div>
-            <button type="button" class="carousel-control-prev"  data-bs-slide="prev" data-bs-target="#auditorium"> <span class="bi bi-arrow-left bg-light text-black"></span></button>
-             <button type="button" class="carousel-control-next" value="bi bi-left-right" data-bs-slide="next" data-bs-target="#auditorium"><span class="bi bi-arrow-right bg-light text-black"></span></button>
+     <button class="carousel-control-prev" type="button" data-bs-target="#dauditorium" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#auditorium" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
         </div>
     </div>
 </div>
@@ -853,7 +1020,7 @@
                 <div class="card border-0">
                     <div class="card-body">
                         <p class="a aboutkits">About Krishna Chaithanya Institute of Technology and Sciences</p>
-                        <h1>Welcome To The Best Learning Center</h1>
+                        <h1 class="welcome">Welcome To The Best Learning Center</h1>
                         <p class="pr paragraph">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
                         <input type="button" name="button" id="button"value="View all courses" class="viewallcourses"> 
                     </div>
@@ -1348,5 +1515,7 @@
         </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </body>
 </html>

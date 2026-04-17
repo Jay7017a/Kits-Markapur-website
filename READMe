@@ -1,4 +1,3 @@
-Kits-Markapur-Website
 # 🎓 College Website
 
 ## 📌 Description
@@ -83,10 +82,10 @@ This project is a fully responsive **College Website** developed to provide deta
 1. Clone the repository  
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
-******Screesn-Shots***
-->Home.html(UI)
-refer->Screenshots(folder)
-->Almuni.html(UI)
-refer->Screenshots(folder)
-->Contact.html(UI)
-refer->Screenshots(folder)
+#SCREE-SHOTS
+-->Home.html
+refer->Screeshots(folder)
+-->Almuni.html
+refer->Screeshots(folder)
+-->Contact.html
+refer->Screeshots(folder)
