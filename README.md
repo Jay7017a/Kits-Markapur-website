@@ -25,26 +25,12 @@ This project is a fully responsive **College Website** developed to provide deta
 ### 🏫 College Information Module
 - College overview  
 - Departments and courses  
-- Infrastructure details  
-
-### 🖼️ Gallery & Album Module
-- College photos and event gallery  
-- Albums for different activities  
-- Image cards and grid layouts  
+- Infrastructure details 
 
 ### 📞 Contact Module
 - Phone, email, and address details  
 - Location/map integration  
 - Contact form  
-
-### 👨‍🎓 Student Services Module
-- Student registration  
-- Scholar details and records  
-- Application forms  
-
-### 🌐 Translation Module
-- Multi-language support  
-- Content translations  
 
 ### 📰 Blog / College World Module
 - College blog  
@@ -81,7 +67,6 @@ This project is a fully responsive **College Website** developed to provide deta
 
 ## ▶️ How to Run
 1. Clone the repository  
-   ```bash
    git clone https://github.com/your-username/your-repo-name.git
 ******Screesn-Shots***
 ->Home.html(UI)
@@ -90,3 +75,7 @@ refer->Screenshots(folder)
 refer->Screenshots(folder)
 ->Contact.html(UI)
 refer->Screenshots(folder)
+*************************************************************
+#RESULTS-SCREENSHOTS
+---->home.html
+<img width="1920" height="1080" alt="Screenshot 2026-04-17 131130" src="https://github.com/user-attachments/assets/1f65fd1e-85cf-4d2e-b676-965636c1044c" />
