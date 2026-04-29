@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+         html{
+        margin:0;
+        padding:0;
+     }
+     body{
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+     }
+        .Navbar{
+            background-color: #132FE8;
+            display:flex;
+            justify-items: center;
+        }
+        .Navbarelements{
+            color:white;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right:10px;
+            padding:10px;
+        }
+         .Collegeinfo{
+            background-color: #30A8C7;
+            margin-top: 8px;
+            height:25px;
+            border-radius: 20px;
+            padding:5px;
+        }
+        .outerimages{
+            display: flex;
+            justify-content: center;
+        }
+        .images1{
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .images{
+             
+             width:80px;
+             height:80px;
+            
+             
+        }
+        .imageskakinada{
+            
+            width:80px;
+            height:80px;
+           
+        }
+        .autonomous{
+            background-color:black;
+            padding-left: 130px;
+            padding-right:200px;
+            
+        }
+        .announcements{
+           
+            color:black;
+            background-color:#738B91;
+            font-size:60px;
+            height:10px;
+            padding-left:200px;
+            padding-top:10px;
+            padding-bottom:70px;
+            border-radius:20px;
+        }
+         .lists{
+            background-color:#0AF512;
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            
+        }
+        .innerlists{
+            padding:10px;
+            margin-right: 10px;
+            color:black;
+            
+
+        }
+        .select{
+            border:none;
+            outline: none;
+             background-color: #0AF512;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             margin-bottom: 5px;
+            font-size:15px;
+             color:black;
+             position:sticky;
+            top:0px;
+        }
+        .options{
+           
+             background-color:white;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding:30px;
+             margin-top:30px;
+             color:#7A7978;
+        }
+        .options:hover{
+            color: #132FE8;
+        }
+       
+        .audiimage{
+            margin-top:0%;
+        }
+        .outerdiv{
+            
+            display:flex;
+            justify-content: center;
+            border-bottom: 10px solid #1E18ED;
+            
+        }
+        .Greencampus{
+            background-color: #BEC4BE;
+          
+           margin-right:20px; position:relative;
+           border-radius: 15px;
+           display:flex;
+           justify-content: center;
+           flex-wrap:wrap ;
+           margin-bottom: 10px;
+        }
+        .greencampusposition{
+           padding:10px;
+           margin-right: 3px;
+           width:50px;
+           height:50px;
+        }
+        .greentext{
+            padding:10px;
+        }
+        .Greencampus2{
+            background-color: #BEC4BE;
+          
+           margin-right:20px; position:relative;
+           border-radius: 15px;
+           display:flex;
+           justify-content: center;
+           flex-wrap:wrap ;
+           margin-bottom: 10px;
+        }
+        .greencampusposition2{
+           padding:10px;
+           margin-right: 3px;
+           width:50px;
+           height:50px;
+           
+        }
+        .greentext2{
+            padding:10px;
+        }
+          .Greencampus2:hover{
+           padding:10px;
+         border-bottom:12px solid #132FE8;
+          border-top:2px solid #132FE8;
+           border-right:2px solid #132FE8;
+            border-left:2px solid #132FE8;
+            border-radius:0%;
+        }
+        .Greencampus:hover{
+           padding:10px;
+         border-bottom:12px solid #132FE8;
+          border-top:2px solid #132FE8;
+           border-right:2px solid #132FE8;
+            border-left:2px solid #132FE8;
+            border-radius:0%;
+        }
+       .outerrambabupic{
+            height:500px;
+            background-image: linear-gradient(rgba(122,234,233,0.4),rgba(211,221,222.0.5));
+            border-bottom: 10px solid blue;
+            position:relative;
+            display: flex;
+           
+        
+        }
+        .ramimage{
+            border-left:20px solid blue;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            position:absolute;
+            top:100px;
+            left:80px;
+            margin-right:50px;
+        }
+        .ram{
+            position:absolute;
+            right:80px;
+            top:100px;
+            padding:10px;
+            height:300px;
+            width:700px;
+            font-family:cursive;
+        }
+       .aboutkits{
+        color:#443EF7;
+       }
+       .paragraph{
+        color:#6F6F70;
+        font-size: larger;
+       }
+       .carousel-item .img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+       }
+       .viewallcourses{
+        padding:10px;
+        border-radius: 12px;
+        color:white;
+        background-image:linear-gradient(rgba(6, 14, 128,0.9));
+        width:200px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .chaithanya{
+        width: 300px;
+        height:200px;
+       }
+       .trusted{
+        position:absolute;
+        right:0px;
+        bottom:10px;
+        padding:10px;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height:30px;
+       }
+       .outercard{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+       }
+       .crcolor{
+        color: #132FE8;
+        background-color: #96E5F2;
+       }
+       .h3{
+        border-left:4px solid #0AF512;
+       }
+      .ramborder{
+        border-bottom: 10px solid blue;
+        margin-bottom: 5%;
+      }
+      
+         @media screen and (max-width:640px) {
+            
+          .Greencampus{
+            display: none;
+          }
+          .greencampusposition{
+            display: none;
+          }
+          .greentext{
+            display: none;
+          }
+         .up{
+            display:none;
+         }
+  
+        }
+        @media screen and (max-width:1200px) {
+            .up{
+                display: none;
+            }
+            .audiimage{
+                margin-top: 15%;
+            }
+            .Navbar{
+                display:none;
+                display:block;
+            }
+           
+            .images1 .images{
+                display:none ;
+            }
+            .lists{
+                display: none;
+            }
+          .innerlists{
+            display:none;
+          }
+          .announcements{
+            display: none;
+          }
+          
+           
+          .imageskakinada{
+                width:50px;
+                height:50px;
+                
+                position: absolute;
+                right:5px;
+                top:0px;
+            }  
+            .card1{
+            max-width: 100%;
+            margin-right: 0%;
+        }
+            .auditorium{
+                    margin-top: 60px;
+                    width:100%;
+                    height:200px;
+            }
+
+            .trusted{
+            display: none;
+          }
+          .outerrambabupic{
+           display:none;
+          }
+           .ram{
+            display:none;
+        }
+        .ramimage{
+           display:none;
+        }
+        
+  
+        }
+       a{
+        text-decoration: none;
+       }
+      .nav-link{
+        display:block;
+        padding:8px;
+        transition:0.3s;
+      }
+     .nav-item .nav-link:hover{
+        color:blue !important;
+        transform:scale(1.3);
+     }
+     i{
+        margin-right: 5%;
+     }
+     .phone{
+        display:flex;
+     }
+     html{
+        margin:0;
+        padding:0;
+     }
+     body{
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+     }
+     ::placeholder{
+        color:aliceblue;
+    opacity:1
+    }
+    .bi-send{
+        display: block;
+        transition:0.4s;
+    }
+    .bi-send:hover{
+        color:rgb(236, 236, 17);
+        font-size:50px;
+        transform:scale(1.4);
+    }
+    #email{
+
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+    .placements{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .placementit{
+        border:1px #6F6F70;
+        margin-left: 10;
+    }
+    .placecenter{
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        filter:invert(100%);
+    
+    }
+    .depart{
+        height:200px;
+        width:100%;
+        object-fit:cover;
+        padding:0;
+    }
+    .copyright{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    @keyframes flash{
+        0%{
+           transform:translateX(100%);
+        }
+      
+        100%{
+          transform: translateX(-100%);
+        }
+       
+    }
+    .flash-msg{
+        overflow: hidden;
+    }
+    .flash-outerdiv{
+        position:relative;
+     
+        animation-name:flash;
+        animation-duration:25s;
+        animation-iteration-count:infinite;
+    }
+    @keyframes kitsautonumusglow{
+        0%{
+            box-shadow: -5x 0px 5px 5px white;
+            background-color:#A0B0EB;
+
+        }
+        50%{
+             box-shadow: 5px 0px 5px 5px white;
+            background-color:#132FE8;
+
+        }
+        100%{
+            box-shadow: 5px 0px 5px 5px white;
+            background-color:#1E18ED;
+        }
+    }
+   .kitsautonumus{
+    border-radius:5px;
+
+    animation-name:kitsautonumusglow;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+   }
+   @keyframes ff {
+    from{
+        background-color: #443EF7;
+    }
+    to{
+        background-color: #132FE8;
+    }
+   }
+   .kitscg{
+    animation-name:ff;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   }
+   @keyframes grievances{
+    from{
+        background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  
+        
+    }
+    to{
+        background-color: aliceblue;
+       outline: 2px solid white;
+       color: white;
+        
+    }
+   }
+   .greev{
+    overflow: visible;
+     outline: 2px solid red;
+     color: white;
+     background-color: red;
+   }
+   .grievance{
+    animation-name: grievances;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+   }
+   .exam-pos{
+    position:relative;
+    overflow: hidden;
+   height:150px;
+   }
+   @keyframes upwards{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+   }
+   @keyframes shaking-row{
+  0% { transform: translate(1px, 1px) rotate(0deg); 
+     background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  10% { transform: translate(-1px, -2px) rotate(-1deg);
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+   }
+  20% { transform: translate(-3px, 0px) rotate(1deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  30% { transform: translate(3px, 2px) rotate(0deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  40% { transform: translate(1px, -1px) rotate(1deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  60% { transform: translate(-3px, 1px) rotate(0deg);
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+   }
+  70% { transform: translate(3px, 1px) rotate(-1deg);
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+   }
+  80% { transform: translate(-1px, -1px) rotate(1deg);
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+   }
+  90% { transform: translate(1px, 2px) rotate(0deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+  100% { transform: translate(1px, -2px) rotate(-1deg); 
+ background-color: red;
+        outline: 2px solid red;
+         outline: 2px solid red;
+  }
+
+   }
+   .shake:hover{
+    animation-name: shaking-row;
+    animation-duration: 0.6s;
+    
+   }
+  .examcard{
+    background-color:#ADF7E2;
+  }
+   .examnotifications{
+    position:absolute;
+    top:100%;
+    width:90%;
+    animation-name:upwards;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+   }
+  .examborder{
+    border-left: 3px solid #0AF512;
+    border-top-left-radius: 3px solid green;
+    border-bottom-left-radius: 3px solid green;
+  }
+  .exambox{
+    box-shadow: 0 0 10px 5px rgba(100, 105, 103,0.5);
+  }
+  .first-carousel-img{
+    opacity:1.9;
+    
+  }
+  .flash-outerdiv{
+    position: relative;
+  }
+  .carou img {
+  width: 100%;
+  height: 400px;      /* same height for all images */
+  object-fit: cover;  /* main fix */
+}
+.s-nav{
+    z-index:1000;
+}
+.welcome{
+    text-shadow: 1px 2px 5px yellow;
+}
+.images2{
+    position:relative;
+}
+@keyframes right-side {
+    0%{
+        left:0px;
+        opacity:0;
+        
+        display:none;
+    }
+      20%%{
+        left:30px;
+        opacity:0;
+        display:none;
+    }
+      40%%{
+        left:40px;
+        opacity:0;
+        display:none;
+    }
+      60%{
+        left:60px;
+        opacity:0.3;
+   
+    }
+      80%{
+        left:80px;
+        opacity:0.5;
+        transform:rotateX(100%);
+        
+    }
+
+    100%{
+        left:100px;
+        background-color:red;
+        color:black;
+        opacity:1;
+       
+    }
+}
+.transition-p{
+    position:absolute;
+    bottom:70px;
+    left:-320px;
+    opacity:0;
+    transform: translateY(-100%);
+    animation:right-side 3s linear infinite;
+}
+    </style>
+</head>
+<body >
+    
+    <div class="container-fluid bg-black up mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 pr-0 mr-0">
+                    <span class="bg-light p-1 text-black fllash">
+                        Flash<span class="bi bi-arrow-right text-black"></span>
+                    </span>
+                </div>
+                
+                <div class="col-md-11 flash-msg">
+                    <div class="row">
+                <h6 class="text-light p-1 flash-outerdiv welcome">
+                    The First Accredited Institution by NAAC,Western Prakasam,Ap
+                </h6>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-primary p-0">
+  <div class="container-fluid p-0 m-0">
+    
+    
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse bg-primary" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link active text-light fs-4 ml-2" href="#">Home</a>
+        </li>
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link text-light fs-4" href="./Almuni.html">Alumni</a>
+        </li>
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link text-light fs-4" href="#">Contacts</a>
+        </li>
+        <li class="nav-item text-light fs-4">
+          <a class="nav-link text-light fs-4" href="#">Courses</a>
+        </li>
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link text-light fs-4" href="#">KRISHNA CHAITHANYA INSTITUTE OF TECHNOLOGY AND SCIENCES</a>
+        </li>
+        <li class="nav-item text-light fs-3">
+          <a class="nav-link text-light fs-4" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="bg-primary text-light border-3 border-black m-2" value="button">College view</button>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+    </nav>
+    <div>
+    <div class="outerimages">
+        <div class="images1 mr-3"><img src="./aicte.jpeg" class="images" data-bs-target="#aicte" data-bs-toggle="modal"></div>
+        <div class="images1 mr-3"><img src="./jntu.png"  class="imageskakinada" data-bs-target="#jntu" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./naac.png" class="images" data-bs-target="#naac" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./naacb++.jpeg" class="images" data-bs-target="#naacb++" data-bs-toggle="modal"></div>
+        <div class="images1"><img src="./ugc.png" class="images" data-bs-target="#ugc" data-bs-toggle="modal"></div>
+</div>
+<div class="modal fade text-center" id="aicte">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>AICTE Approves Institute</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./aicte.jpeg" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="jntu">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>Jawaharlalr Technological University ,Kakinada</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./jntu.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="naac">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>National Assesment and Accredition Council</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./naac.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="aicte">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>B++</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./naacb++.jpeg" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade text-center" id="ugc">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h5>Approved By UGC</h5>
+            </div>
+            <div class="modal-body">
+                <img src="./ugc.png" alt="AICTE">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="container-fluid bg-black">
+    <div class="container kitsautonumus kitsclg">
+        <div class="row">
+            <div class="p-2">
+                <h5 class="text-black text-center">KITS COLLEGE IS NOW AUTONOUMUS..!</h5>
+            </div>
+        </div>
+    </div>        
+    </div>
+<div class="container-fluid p-2">
+    <div class="container greev grievance shake">
+        <div class="row ">
+            <h6 class="text-center">GRIEVANCE CELL</h6>
+        </div>
+    </div>
+</div>
+    <div class="lists position-sticky top-0 s-nav">
+        <div class="innerlists">
+            <select class="select">
+                <option class="options" value="About Kits">ABOUT KITS</option>
+                <option class="options" value="VISIOV & MISSION">Vision & Mission</option>
+                <option  class="options" value="Organisation chart">Organization Chart</option>
+                <option class="options" value="Institutional development plan">Institutional Development plan</option>
+                <option class="options" value="Hr policy">HR policy</option>
+                <option  class="options" value="Annual celebrations">Annual celebrations</option>
+                <option class="options" value="College Location">College location</option>
+            </select>
+        </div>
+         <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="Administration">ADMINISTRATION</option>
+                <option class="options"  value="chairman">Chairman</option>
+                <option class="options"  value="Secretary & correspondent">Secretary & correspondent</option>
+                <option class="options"  value="Principle">Principle</option>
+                <option class="options"  value="Governing Body">Governing Body</option>
+                <option class="options"  value="Exam cell details">Exam cell details</option>
+                <option class="options"  value="Faculty Details">faculty Details</option>
+                <option class="options"  value="College Location">College location</option>
+            </select>
+        </div>
+         
+         <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="Academis">ACADEMICS</option>
+                <option class="options"  value="Academic Syllabus">Academic syllabus</option>
+                <option class="options"  value="Academic calenders">Academic calenders</option>
+                <option class="options"  value="Syllabus & regulations">Syllabus & Regulations</option>
+                <option class="options"  value="Academic Rules">Academic rules</option>
+                <option class="options"  value="Academic Programs">Academic Programs</option>
+                     
+            </select>
+        </div>
+        <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="Department">DEPARTYMENT</option>
+                <option class="options"  value="B.tech">B.Tech</option>
+                <option class="options"  value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+          <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="Examinations">EXAM CELL</option>
+                <option class="options"  value="External time tables">External time tables</option>
+                <option class="options"  value="Internal Time tables">Internal time tables</option>
+                <option class="options"  value="Academic Calenders">Academic Calenders</option>
+                <option class="options"  value="Academic Toppers">Academic toppers</option>
+                <option class="options"  value="Previous year Question Papers">Previous Year Question papers</option>
+                     
+            </select>
+            </div>
+             <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="training & placement cell">TRAINING & PLACEMENTS CELL</option>
+                <option class="options"  value="Carrer guidance">Carrer Guidance</option>
+                <option class="options"  value="Intership Offers">Intership Offers</option>
+                <option class="options"  value="Project Guidance">Project Guidance</option>
+                <option class="options"  value="Previous Year placements">Previous year placements</option>
+                     
+            </select>
+            </div>
+            <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="LIBRARY">LIBRARY</option>
+                <option class="options"  value="Managdrial disclosure">Managerial Disclosure</option>
+                <option class="options"  value="disciplane">Disciplane</option>
+                </select>
+            </div>
+            <div class="innerlists">
+            <select class="select">
+                <option class="options"  value="Student life">STUDENT LIFE</option>
+                <option class="options"  value="NSS">NSS</option>
+                 <option class="options"  value="Hosetl">Hostel</option>
+                <option class="options"  value="AntiRagging">Anti Rggaing</option>
+                <option class="options"  value="Canteen">Canteen</option>
+                    <option class="options"  value="Exam cell details">Exam cell details</option>
+                     <option class="options"  value="Faculty Details">faculty Details</option>
+                      <option class="options"  value="College Location">College location</option>
+            </select>
+            </div>
+             <div class="innerlists">
+            <select class="select">
+                 <option class="options"  value="INFORMATION CORNER">INFORMATION CORNER</option>
+                <option class="options"  value="Job Openings">Job openings</option>
+                 <option class="options"  value="rti">RTI</option>
+                  <option class="options"  value="Telephone Directory">Telephone Directory</option>
+            </select>
+            </div>
+</div>
+<div class="container-fluid h-50">
+    <div class="row">
+        <div class="carousel slide" id="auditorium">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active carou">
+                    <img src="./kitsimage.jpeg" class="images2" ><p class="transition-p text-light fs-3">OPEN AUDITORIUM</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./A-block.jpg" class="images2"><p class="transition-p text-light fs-3">A-Block</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./library-students.jpg" class="images2"><p class="transition-p text-light fs-3">Library-Infrastructure</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./annual-students-dance.jpg" class="images2"><p class="transition-p text-light fs-3">Annual-Day-Celebrations</p>
+                </div>
+                  <div class="carousel-item carou">
+                    <img src="./campus.jpeg" class="images2"><p class="transition-p text-light fs-3">Campus</p>
+                </div>
+            </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#dauditorium" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#auditorium" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container h-100  ml-0 mr-0">
+        <div class="row">
+            <div class="col-md-6 mt-3 mb-3">
+                <div class="card h-100 border-radius-5 border-0 examcard exambox">
+                    <div class="card-header pl-3 border-bottom-0 ">
+                        <div class="pl-3">
+                            <h3 class="text-primary">Examination Board</h3>
+                            <span>Get All the Examinations Updates</span>
+                        </div>
+                    </div>
+                    <div class="card-body exam-pos m-2 bg-light">
+                        <div class="p-3">
+                            <p class="p-3 examnotifications fs-5">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 mb-3">
+                <div class="card h-100 border-radius-5 border-0 examcard exambox">
+                    <div class="card-header pl-3 border-bottom-0">
+                        <div class="pl-5">
+                            <h3 class="text-primary">Notification Board</h3>
+                            <span class="">Get All the Notifications Updates</span>
+                        </div>
+                    </div>
+                    <div class="card-body exam-pos m-2 bg-light">
+                        <div class="p-3">
+                            <p class="p-3 examnotifications fs-5">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="outerdiv">
+    <div class="Greencampus2 g1">
+            <img src="./worldclassimage.jpg" width="50%;" height="30%;"  class="greencampusposition2 g1"><p class="greentext2">
+            <h2>Worls Class Education</h2><br>
+            <p>Help Us to develop Skills</p></p>
+    </div>
+    <div class="Greencampus">
+            <img src="./expertteachers.jpg"  class="greencampusposition">
+            <p class="greentext">
+            <h2>Expert teachers</h2><p>Best And Highly Qualified</p></p>
+    </div>
+    <div class="Greencampus">
+            <img src="./greeencampus4.jpg"  class="greencampusposition">
+            <p class="greentext">
+            <h2>Green Campus</h2><p>Healthy Environment</p></p>
+    </div>
+</div>
+<div class="container-fluid h-50 border-end border-5 border-primary">
+    <div class="container h-50">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-0 border-0 mt-5">
+                    <div class="card-body p-0 border-start border-5 border-primary border-radius-5 mt-5">
+                        <div class="ramflex d-block d-flex">
+                            <div class="ramcontent">
+                                <img src="./krishna chaothanya.jpg">
+                            </div>
+                            <div>
+                                <img src="./rambabu.jpg" class="h-100 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <p class="a aboutkits">About Krishna Chaithanya Institute of Technology and Sciences</p>
+                        <h1 class="welcome">Welcome To The Best Learning Center</h1>
+                        <p class="pr paragraph">A Visionary, eminent personality and experienced mentor in the field of education Sri Anna Venkata Rambabu is the main driving force behind KITS college of Engineering & Technology. The constant aim of KITS is to incorporate features of excellence in its campus. Every effort is made to implement the best practices in the field of technical education. The management and staff at KITS take all the care to ensure that the institute serves the best to the expectations of the students and their parents.</p>
+                        <input type="button" name="button" id="button"value="View all courses" class="viewallcourses"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-3 m-0">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center text-primary fs-1 p-3">Our Achievements
+            </h1>
+                <div class="col-md-3">
+                    <div class="card border-radius-3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">5,000</h1>
+                            <p class="text-secondary fs-3">STUDENTS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card text-center  border-radius-3">
+                        <div class="card-body">
+                            <i class="bi bi-mortarboard-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">2,640</h1>
+                            <p class="text-secondary fs-3">GRADUATED</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center border-radius-3">
+
+                        <div class="card-body">
+                            <i class="bi bi-trophy-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">600</h1>
+                            <p class="text-secondary fs-3">AWARD WINNERS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card text-center border-radius-3">
+
+                        <div class="card-body">
+                            <i class="bi bi-person-badge-fill fs-1 text-center"></i>
+                            <h1 class="text-primary">150</h1>
+                            <p class="text-secondary fs-3">FACULTIES</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="container-fluid bg-primary p-5 m-0">
+    <div class="container bg-primary">
+        <div class="row">
+            <div class="col-md-5 mr-5 border-primary">
+                <div class="card border-0 outline-primary mr-3">
+                    <div class="card-header text-light fs-3 bg-primary border-bottom-0">
+                        <h1><b>Subscribe to Our NewsLetter</b></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card border-0">
+                    <div class="card-body bg-primary border-bottom border-2 border-light text-light">
+                        <input type="email"  id="email" placeholder="Enter Your E-mail" class=" bg-primary border-0 text-light fs-5">
+                    </div>
+                    <div class="card-footer text-light bg-primary">
+                        Kindly Sign Up for Weekly News and Updates
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 ml-0 border-0">
+                <div class="card border-0 ml-0">
+                    <div class="card-body bg-primary border-0 ml-0">
+                        <i class="bi bi-send fs-1 ml-0 text-light"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mb-3">
+    <div class="row">
+        <h1 class="text-center text-primary">Our Placement Partners</h1>
+        <div class="col-md-12">
+            <div class="carousel slide" id="carouselep" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <img src="./deloite.jpg">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="./infosys.png">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="./qualcom.png">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="./peopletech.jpg">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="./infosys.png">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselep" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-dark p-0"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselep" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid bg-primary p-5 pt">
+        <div class="container">
+            <div class="row">
+                <h1 class="bg-primary text-light p-2">Recent Activities</h1>
+            <div class="col-md-12">
+            <div class="carousel slide" id="carouselepee" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card h-100 w-100">
+                                    <div class="card-header h-50 p-0">
+                                        <img src="./vscode.jpeg" class="img-fluid w-100 h-100">
+                                    </div>
+                
+                                    <div class="card-body">
+                                        <a href="#"><h1>KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                        <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-block d-lg-block">
+                                <div class="card h-100 w-100">
+                                    <div class="card-header h-50 p-0">
+                                        <img src="./tap.jpeg" class="img-fluid w-100 h-100">
+                                    </div>
+                    
+                                    <div class="card-body">
+                                        <a href="#"><h1>KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                        <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-sm-12 d-sm-none d-md-none d-lg-block">
+                                <div class="card border-radius-3 h-100 w-100">
+                                    <div class="card-header p-0 h-50">
+                                        <img src="./nss.jpeg" class="img-fluid w-100 h-100">
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#" class="m-0"><h1 class="m-0">KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                        <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 col-md-6">
+                                <div class="card h-100 w-100">
+                                    <div class="card-header h-50 p-0">
+                                        <img src="./nss.jpeg" class="img-fluid w-100 h-100">
+                                    </div>
+                                
+                                    <div class="card-body">
+                                        <a href="#"><h1>KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                        <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-lg-block d-md-block">
+                            <div class="card h-100 w-100">
+                                <div class="card-header p-0 h-50">
+                                    <img src="./tap.jpeg" class="img-fluid w-100 h-100">
+                                </div>
+                    
+                                <div class="card-body">
+                                    <a href="#"><h1>KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                    <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-none d-lg-block">
+                            <div class="card border-radius-3 h-100 w-100">
+                                <div class="card-header p-0 h-50">
+                                    <img src="./nss.jpeg" class="img-fluid w-100 h-100">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="m-0"><h1 class="m-0">KITS COLLEGE STUDENTS GOT SELECTED IN TAP ACADEMY</h1></a>
+                                    <p>Kits coolege final year CSE,CSE-AI students as well as ECE students got selected in Tap acdemy in Banglore to give 100% training and we are congratulated to them.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselepee" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-dark p-0"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselepee" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-secondary p-5 pt">
+    
+    <div class="row">
+        <h1 class="text-light p-2 fs-1">Our Departments</h1>
+            <div class="col-md-12">
+                <div class="carousel slide" id="carouselep2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card h-100 w-100">
+                        <div class="card-header depart">
+                            <img src="./sh.png" class="img-fluid w-100 h-100">
+                        </div>
+                
+                        <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">S&H</h1>
+                            <a href="#" class="text-danger text-decoration-none text-center fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-block d-lg-block">
+                            <div class="card h-100 w-100">
+                         <div class="card-header depart">
+                            <img src="./ece.jpg" class="img-fluid w-100 h-100">
+                        </div>
+                    
+                        <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">ECE</h1>
+                            <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 col-sm-12 d-sm-none d-md-none d-lg-block">
+                            <div class="card border-radius-3 h-100 w-100">
+                         <div class="card-header depart">
+                            <img src="./cse.jpg" class="img-fluid w-100 h-110">
+                        </div>
+                       <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">CSE</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 col-md-6">
+                            <div class="card h-100 w-100">
+                        <div class="card-header depart">
+                            <img src="./mechanical.jpg" class="img-fluid w-100 h-110">
+                        </div>
+                
+                       <div class="card-body bg-primary text-center">
+                            <h1 class="text-center">Mechanical</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                    
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-lg-block d-md-block">
+                            <div class="card h-50 w-70">
+                         <div class="card-header depart">
+                            <img src="./civil.jpg" class="img-fluid w-100 h-100">
+                        </div>
+                    
+                       <div class="card-body bg-primary text-cenetr">
+                            <h1 class="text-center">Civil</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-12 col-md-6 d-sm-none d-md-none d-lg-block">
+                            <div class="card border-radius-3 h-50 w-100">
+                         <div class="card-header depart">
+                            <img src="./aiml.jpg" class="img-fluid w-100">
+                        </div>
+                       <div class="card-body bg-primary text-cenetr">
+                            <h1 class="text-center">AI-ML</h1>
+                             <a href="#" class="text-danger text-center text-decoration-none fs-2">Read More-></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselep2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-dark p-0"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselep2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+            
+    </div>
+</div>
+</div>
+</div>
+<footer class="m-0">
+    <div class="container-fluid bg-black">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-md-2 mb-0">
+                    <img src="./jntu.png" width="50%"; height="80%;">
+                </div>
+                
+                <div class="text-secondary">
+                    <p>The College is Well Maintained and Well Developed with Latest Developements</p>
+                </div>
+            </div>
+            <div class="row pt-2 border-top border-1 border-secondary">
+                <div class="col-md-4">
+                    <div class="card bg-black text-light">
+                        <div class="card-header h-0">
+                            Contact
+                        </div>
+                        <div class="card-body">
+                            <div class="phone">
+                            <i class="bi bi-telephone text-warning fs-3 me-3"></i>
+                            <div>
+                            <p class="fs-6 text-secondary">Call Anytime</p>
+                            <p>948576203,9870645321</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-top border-1 border-secondary">
+                            <div class="phone">
+                                <i class="bi bi-envelope fs-3 text-warning me-3"></i>
+                                <div>
+                            <p class="fs-6 text-secondary">Send E-mail</p>
+                            <p>kitsprinciple@anna.com</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-body border-top border-1 border-secondary">
+                             <div class="phone">
+                                <i class="bi bi-geo-alt me-3 fs-3 text-warning"></i>
+                                <div>
+                            <p class="fs-6 text-secondary">Vist Office</p>
+                            <p>Krishana chaithanya institute of technology and sciences,Devarajugattu,Markapur manadal</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-black text-light">
+                        <div calss="header text-light">
+                            <p>Links</p>
+                        </div>
+                        <div class="card-body">
+                        <div class="navabar bg-black">
+                            <ul class="navbar-nav">
+                                <li class="nav-item text-light">
+                                    <a href="#" class="nav-link text-light">About Feeedback</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Academics</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Departments</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Examination</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Placements Cell</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">R & D</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Central Library</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Committes</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Student Services</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">NAAC</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Alumni</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link text-light">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-black">
+                        <div class="card-header p-3 text-light">
+                            <p>Courses</p>
+                        </div>
+                        <div class="card-body p-0 m-0">
+                            <div class="navbar p-0 m-0">
+                                <ul class="navabar-nav">
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">CSE-AI&ml,CSE-AI</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">CIVIL</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">CSE</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">ECE</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">EEE</a>
+                                    </li>
+                                    
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">S&H</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">MECHANICAL</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a href="#" class="nav-link text-light li">M.Tech-VLASI&ES</a>
+                                    </li>
+
+                                    
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+    </div>
+    </div>
+    
+</footer>
+<footer>
+        <div class="container-fluid p-3 bg-black">
+            <div class="row">
+                <div class="col-md-9">
+                <h6 class="text-secondary text-center">@CopyRight 2022 Krishna chaithanya Institute of Technologies and Scieneces.Designed by Jayasree-jr.software developer</h6>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-twitter text-light mr-3"></i>
+<i class="bi bi-facebook text-primary mr-3"></i>
+<i class="bi bi-linkedin text-primary mr-3"></i>
+<i class="bi bi-instagram text-danger mr-3"></i>
+<i class="bi bi-whatsapp text-success mr-3"></i>
+
+            </div>
+        </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+</body>
+</html>
