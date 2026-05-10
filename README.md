@@ -20,7 +20,7 @@ Screenshots of the home page and other sections have been included in the reposi
 📊 Project Result
 
 This project successfully demonstrates a responsive and structured front-end college website using Bootstrap components. It focuses on layout design, responsiveness, and UI presentation without backend integration.
-
+Netlify : https://kits-college-markapur.netlify.app/
 #RESULTS-SCREENSHOTS ---->home.html
 Screenshot 2026-04-17 131130
 <img width="1920" height="1080" alt="Screenshot 2026-04-17 131130" src="https://github.com/user-attachments/assets/43f7a8a5-e6b8-4486-abe9-fd6624ad9fa1" />
